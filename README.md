@@ -1,2 +1,14 @@
-# CS230-8
-Module 8 Journal
+# CS 230 Project: Software Design Document for The Gaming Room
+
+## Project Summary
+**Client and Software Requirements**: The Gaming Room, a game development company, required a redesign of their game "Draw It or Lose It" to transition from an Android-only application to a web-based application accessible across multiple platforms, including Windows, Mac, Linux, and mobile devices. The software needed to support multiple concurrent game sessions, manage teams and players, ensure cross-browser compatibility, and maintain low-latency performance for real-time drawing and timer functionalities.
+
+**Strengths in Documentation**: The documentation excels in its clear articulation of the domain model, leveraging a UML class diagram to illustrate class relationships and object-oriented principles like inheritance and encapsulation. The design constraints section effectively highlights the challenges of a distributed web environment and proposes a modular architecture to address them, ensuring scalability and maintainability.
+
+**Helpful Aspects of the Design Process**: Working through the design document provided a structured roadmap for development. The domain model and UML diagram clarified the relationships between entities (Game, Team, Player, and GameService), which streamlined the implementation of the game’s core logic. The platform evaluation table helped prioritize Linux as the server platform, guiding infrastructure decisions early in the process.
+
+**Area for Revision**: If I could revise one part, it would be the Executive Summary. While it introduces the problem and solution, it could be more concise and include specific technical highlights, such as the use of WebSockets for real-time communication or PostgreSQL for data management. I would improve it by summarizing the key technologies and architectural choices in a bullet-point format for better readability and impact.
+
+**Interpreting and Implementing User Needs**: The user’s needs were interpreted by analyzing The Gaming Room’s requirements for cross-platform accessibility, concurrent session management, and low-latency performance. These were implemented through a modular architecture with a centralized GameService, a responsive front-end, and a robust backend using HTTPS and WebSockets. Considering user needs is critical because it ensures the software meets client expectations, enhances user experience, and aligns with business goals, ultimately determining the project’s success.
+
+**Approach to Software Design**: The design approach involved iterative requirement analysis, UML modeling, and platform evaluation to create a scalable and maintainable system. Techniques like object-oriented design principles (inheritance, encapsulation) and modular architecture were central to the process. In the future, I would continue using UML diagrams for visualizing relationships, incorporate user feedback loops during design, and leverage prototyping tools to validate design choices early, ensuring alignment with client needs and technical feasibility.
